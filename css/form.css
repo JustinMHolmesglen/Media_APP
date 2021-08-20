@@ -1,0 +1,181 @@
+/* Style css version final 2.1.5
+Last edited 11052021
+Edited by Justin McAleer*/
+
+.Section-D *{
+    
+        color: #333;
+        font-family: sans-serif, 'Verdana';
+        /* line-height: 16px;*/
+        box-sizing: border-box;
+        margin: 0 auto;
+        /* 
+        -May want to add "border-box for "box-sizing so padding does not affect width
+        -Reset margin and padding 
+       */
+      }
+.Section-D{
+    background-color: var(--primary-color);
+    padding: 45px;
+    }
+
+    a {
+        text-decoration: none;
+        /* 
+        Underlined links are ugly :)
+       */
+      }
+
+      #container {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 400px;
+        background-color: #fff;
+        
+        /* 
+        -Remember, margin: auto on left and right will center a block element 
+        -I would also set a "max-width" for responsiveness
+        -May want to add some padding
+        */
+      }
+      form{
+          background: var(--secondary-color);
+          padding: 0;
+          margin: 0;
+      }
+
+      .form-wrap {
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 2px 2px 5px #000;
+        /* 
+          This is the white area around the form and heading, etc
+        */
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 12px 0 12px 0;
+        color: #000;
+
+        /* 
+          May want to center these
+        */
+      }
+
+      .form-wrap .form-group {
+        padding: 12px;
+        text-align: center;
+        /*margin-bottom: 6px;*/
+        /* 
+          Each label, input is wrapped in .form-group
+        */
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        color: #ffffff;
+        text-shadow: .75px .75px 0px black;
+        margin-bottom: 6px;
+        text-align: center;
+        /* 
+          Label should be turned into a block element
+        */
+      }
+
+      .form-wrap .form-group input {
+        width: 90%;
+        border: none;
+        border-bottom: solid 1px #252525;
+        color: #000;
+        font-size: 16px;
+        margin: 0 auto;
+        
+        padding: 6px 0 6px 6px;
+        /* 
+          Inputs should reach accross the .form-wrap 100% and have some padding
+        */
+      }
+
+      .form-wrap button {
+        background-color: aquamarine;
+        display: block;
+        text-align: center;
+        margin: 12px auto;
+        padding: 12px;
+        color: #000;
+        border: none;
+        width: 90%;
+        font-family: sans-serif, 'Verdana';
+        font-size: 16px;
+        border: 1px solid #000;
+        /* 
+          Button should wrap accross 100% and display as block
+          Background color for button is #49c1a2
+        */
+      }
+
+      .form-wrap button:hover {
+        cursor: pointer;
+        background-color: antiquewhite;
+        color: #252525;
+        /* 
+          Hover background color for button is #37a08e
+        */
+      }
+
+      .form-wrap .bottom-text {
+        color: #000;
+        font-size: 16px;
+        line-height: 32px;
+
+        /* 
+          Bottom text is smaller
+        */
+      }
+
+      .bottom-text a{
+        color: aquamarine;
+        text-shadow:black .35px .35px 0px;
+      }
+
+      .bottom-text p{
+        color: #000;
+        padding-bottom: 12px;
+        
+      }
+
+      footer-form {
+        text-align: center;
+        color: #000;
+        padding-bottom: 12px;
+        /* 
+        Should be centered
+       */
+      }
+
+      footer-form a {
+        color:aquamarine;
+        
+        text-shadow: #000 .35px .35px 0;
+        
+        /* 
+          Footer link color is #49c1a2
+        */
+      }
+
+      footer-form p{
+        color: #fff;
+      }
+
+      footer-form{
+        background-color: var(--secondary-color);
+        padding: 0 !important;
+        margin: 0;
+        
+      }

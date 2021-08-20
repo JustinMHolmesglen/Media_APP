@@ -1,0 +1,101 @@
+/*stylesheet 0 _ Justin McAleer 14/07/2021*/
+:root{
+    /*--primary-color: #b8f5c7;*/
+    /*--primary-color: #bdf3ba;*/
+    --primary-color: #a2f4f6;
+    --secondary-color: #d58b8b;
+    --main-font: 'helvetica', 'arial', sans-serif;
+    --secondary-font: 'roboto', 'arial', sans-serif;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--main-font);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+a:hover{
+    color: red;
+    text-shadow: 1px 1px 2px #000;
+    border-top-left-radius: 25px; 
+    
+}
+
+body{
+    background-image: url("../images/background.png");
+    max-width: 1080px;
+    grid-template-columns: 1fr !important;
+}
+
+/*format the videos in the resulting search*/
+section#section-cards{
+    width: 100%;
+}
+/*edit the search bar*/
+.input-group{
+    width: 100%;
+    padding: 1% 5% 1% 5%;
+    
+    border: .5px solid #252525;
+    background: #fefefe;
+}
+
+.row{
+    --bs-gutter-x: 0 !important;
+}
+
+/*use cards for grid system, default settings*/
+#cards{
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+/*Media queries for responsive desktop*/
+@media only screen and (max-width: 1000px){
+    
+    #cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    #cards, #cards > p{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+
+
+    #cards > video{
+        width: 100%;
+    }
+}
